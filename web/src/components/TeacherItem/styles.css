@@ -24,7 +24,7 @@
 }
 
 .teacher-item header div strong {
-  font: 700 2.4rem /*Archivo*/;
+  font: 700 2.4rem Archivo;
   display: block;
   color: var(--color-text-title);
 }

@@ -1,7 +1,6 @@
 import React from 'react';
-import PageHeader from '../../../components/PageHeader';
-import TeacherItem from '../../../components/TeacherItem';
-
+import PageHeader from '../../components/PageHeader';
+import TeacherItem from '../../components/TeacherItem';
 import './styles.css'
 
 function TeacherList() {
@@ -27,10 +26,6 @@ function TeacherList() {
       </PageHeader>
 
       <main>
-        <TeacherItem />
-        <TeacherItem />
-        <TeacherItem />
-        <TeacherItem />
         <TeacherItem />
       </main>
     </div>
