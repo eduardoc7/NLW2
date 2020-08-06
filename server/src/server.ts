@@ -1,5 +1,6 @@
 import express from 'express';
 import routes from './routes';
+import cors from 'cors';
 
 // parametros que podemos receber na API, com o método POST:
 // corpo (request.body): Dados para criação ou atualização de um registro.
@@ -9,6 +10,7 @@ import routes from './routes';
 
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 app.use(routes);
 
