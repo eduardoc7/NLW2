@@ -1,21 +1,15 @@
 import express from 'express';
+import routes from './routes';
+
+// parametros que podemos receber na API, com o método POST:
+// corpo (request.body): Dados para criação ou atualização de um registro.
+// Route Params (request.params): Identifica qual recurso dentro da nossa API eu quero deletar ou atualizar.
+// Query Params (request.query): Uma forma otimizada pra buscar o que queremos da API. Paginação, filtros, ordenação.
 
 
 const app = express();
 
-// cada rota é um caminho para um endereço existente na nossa aplicação 
-// resources o que vem depois da / da url padrão 
+app.use(express.json());
+app.use(routes);
 
-app.get('/users', (request, response) => {
-  console.log('Acessou a log.');
-
-  const users = [
-    { name: 'Eduardo' },
-  ];
-
-  return response.json(users)
-});
-
-// ouvindo requisições http
 app.listen(3333);
-
