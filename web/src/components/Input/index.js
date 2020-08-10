@@ -3,22 +3,33 @@ import PropTypes from 'prop-types';
 
 import './styles.css';
 
-function Input({ label, name, type }) {
+function Input({
+  label, name, type, value, onChange,
+}) {
+
   return (
     <div className="input-block">
       <label htmlFor={name}>{label}</label>
-      <input type={type} id={name} />
+      <input
+        id={name}
+        type={type}
+        value={value}
+        onChange={onChange}
+      />
     </div>
   );
 }
 export default Input;
 
 Input.defaultProps = {
-  type: 'text',
+  value: '',
+  onChange: () => {},
 };
 
 Input.propTypes = {
+  type: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  type: PropTypes.string,
+  value: PropTypes.string,
+  onChange: PropTypes.func,
 };
