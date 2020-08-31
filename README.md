@@ -1,5 +1,5 @@
-# [Proffy Project]
-## [Next Level Week #2] 
+# Proffy Project
+## Next Level Week #2 
 
 ---
 Este projeto é uma plataforma de educação de ensino que tem como o seu principal objetivo transformar o conhecimento e o aprendizado em algo conectado e acessível para qualquer tipo de pessoa. Disponível na sua versão web e mobile, possibilitando alunos encontrarem professores para lhe ajudarem no seu longo trajeto de aprendizagem. Desenvolvido na Next Level Week #2 proposta pela [Rocketseat](https://rocketseat.com.br/).
